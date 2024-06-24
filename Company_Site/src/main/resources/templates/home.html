@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Company Site</title>
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/static/css/home.css">
 </head>
 <body>
 
@@ -13,7 +13,10 @@
     <section>
         <div>
             <h1>CONTENT</h1>
-            <img src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=400" alt="landing_img">
+            <div><img class="img_slide show" src="/static/images/sba_img5.jpg" alt="landing_img"></div>
+            <div><img class="img_slide" src="/static/images/sba_img6.jpg" alt="landing_img"></div>
+            <div><img class="img_slide" src="/static/images/sba_img1.jpg" alt="landing_img"></div>
+            <button onclick="imgSlider()">Next</button>
         </div>
 
         <div>
@@ -24,10 +27,10 @@
 
     <section>
         <div>
-            <div>
-                <img src="https://images.pexels.com/photos/3601491/pexels-photo-3601491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profile_img">
+            <div >
+                <img src="/static/images/sba_img15.jpeg" alt="profile_img">
             </div>
-            <img src="https://images.pexels.com/photos/1874636/pexels-photo-1874636.jpeg?auto=compress&cs=tinysrgb&w=400" alt="profile_bck" >
+            <img src="/static/images/sba_img10.jpg" alt="profile_bck" >
         </div>
 
         <div id="about">
@@ -43,5 +46,6 @@
     <div id="footer1"></div>
 
 <script src="/static/js/loadNav.js"></script>
+<script src="/static/js/slider.js"></script>
 </body>
 </html>
