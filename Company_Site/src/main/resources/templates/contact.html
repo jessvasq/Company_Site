@@ -18,17 +18,17 @@
 
         <section>
             <h3>Contact us</h3>
-            <form action="" method="">
+            <form action="contact.html" method="POST" name="contactForm" id="formContact" onsubmit="return(validateData())">
                 <label for="name"> Name: </label>
-                <input type="text" id="name" name="name" required placeholder="Wilson Doe"> <br>
+                <input type="text" id="name" name="name"  placeholder="Wilson Doe"> <br>
 
                 <label for="email"> Email: </label>
-                <input type="email" id="email" name="email" required placeholder="user@email.com"> <br>
+                <input type="email" id="email" name="email" placeholder="user@email.com"> <br>
 
                 <label for="message"> Message: </label>
-                <input type="text" id="message" name="message" required placeholder="Write your message here"> <br>
+                <input type="text" id="message" name="message" placeholder="Write your message here"> <br>
 
-                <input type="submit" value="submit" required> <br>
+                <input type="submit" value="submit"><br>
 
             </form>
         </section>
@@ -36,6 +36,9 @@
 
     <div id="footer1"></div>
 
+    <!-- first script-->
     <script src="/static/js/loadNav.js"></script>
+    <!-- Second script-->
+    <script src="/static/js/validate.js"></script>
 </body>
 </html>
