@@ -3,21 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Company Site</title>
-    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
 
-<header>
-    <nav>
-        <h1>Company Name</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#services.html">Services</a></li>
-            <li><a href="#projects.html">Our Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <div id="navbar"></div>
 
 <main>
     <section>
@@ -40,7 +30,7 @@
             <img src="https://images.pexels.com/photos/1874636/pexels-photo-1874636.jpeg?auto=compress&cs=tinysrgb&w=400" alt="profile_bck" >
         </div>
 
-        <div>
+        <div id="about">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat nulla id ornare ultricies. Phasellus rutrum ex vel molestie dictum. Nunc sagittis, ante vel blandit venenatis, ligula lectus mattis odio, sed euismod risus turpis nec augue. Nam dapibus id felis efficitur auctor. Integer volutpat laoreet arcu, et pharetra nisi congue sed. Integer vestibulum, dolor eu hendrerit commodo, dui ex dictum orci, a facilisis nisl ipsum bibendum orci. Nullam eget imperdiet odio. Nam placerat magna vehicula consectetur faucibus. Vivamus vitae accumsan augue. Duis non sapien tincidunt, convallis massa at, condimentum mi. Etiam suscipit tincidunt risus at tempus. Morbi non purus accumsan, interdum lacus in, imperdiet nunc. </br>
                  Aliquam luctus lorem diam, quis sollicitudin eros mattis nec. Nulla viverra lorem hendrerit dui malesuada, sit amet bibendum eros commodo. Duis pulvinar dolor sed elit fermentum, non blandit tortor imperdiet. Aenean mattis pretium ipsum eget venenatis. Aliquam tempus massa leo. Morbi sollicitudin fermentum interdum. Integer efficitur, mauris vel tempus blandit, risus dui ullamcorper ante, vitae malesuada ante felis eget erat. Vestibulum eu ex quis metus egestas efficitur.
@@ -50,41 +40,8 @@
     </section>
 </main>
 
-<footer>
-    <h2>Business Name</h2>
-    <section>
-        <h4>Location</h4>
-        <table>
-            <tr>
-                <td>New York</td>
-            </tr>
-            <tr>
-                <td>
-                    Manhattan, 10010
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    123-456-7899
-                </td>
-            </tr>
-        </table>
-    </section>
+    <div id="footer1"></div>
 
-    <section>
-        <h4>Policies</h4>
-        <table>
-            <tr>
-                <td>FAQ</td>
-                <td>Terms & Conditions</td>
-            </tr>
-            <tr>
-                <td>Privacy & Policy</td>
-                <td>Refund Policy</td>
-            </tr>
-        </table>
-    </section>
-    <p>&copy; 2024 Company Name</p>
-</footer>
+<script src="/static/js/loadNav.js"></script>
 </body>
 </html>
