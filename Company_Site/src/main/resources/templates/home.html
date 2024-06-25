@@ -10,35 +10,33 @@
     <div id="navbar"></div>
 
 <main>
-    <section>
-        <div>
-            <h1>CONTENT</h1>
+    <section class="home_section1">
+        <div class="section1_content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat nulla id ornare ultricies. Nam dapibus id felis efficitur auctor.</p>
+            <button class="buttons">CONTACT US</button>
+        </div>
+
+        <div class="image_slider">
             <div><img class="img_slide show" src="/static/images/sba_img5.jpg" alt="landing_img"></div>
             <div><img class="img_slide" src="/static/images/sba_img6.jpg" alt="landing_img"></div>
-            <div><img class="img_slide" src="/static/images/sba_img1.jpg" alt="landing_img"></div>
-            <button onclick="imgSlider()">Next</button>
+            <div><img class="img_slide" id="landing_img" src="/static/images/sba_img1.jpg" alt="landing_img"></div>
+            <button  onclick="imgSlider()">Next</button>
         </div>
-
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat nulla id ornare ultricies. Phasellus rutrum ex vel molestie dictum. Nunc sagittis, ante vel blandit venenatis, ligula lectus mattis odio, sed euismod risus turpis nec augue. Nam dapibus id felis efficitur auctor.</p>
-        </div>
-        <button>CONTACT US</button>
     </section>
 
-    <section>
-        <div>
-            <div >
-                <img src="/static/images/sba_img15.jpeg" alt="profile_img">
+    <section class="home_section2">
+        <div class="profile_container">
+            <div>
+                <img id="profile_img" src="/static/images/sba_img15.jpeg" alt="profile_img">
             </div>
-            <img src="/static/images/sba_img10.jpg" alt="profile_bck" >
+            <img id="profile_bck" src="/static/images/sba_img10.jpg" alt="profile_bck" >
         </div>
 
         <div id="about">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat nulla id ornare ultricies. Phasellus rutrum ex vel molestie dictum. Nunc sagittis, ante vel blandit venenatis, ligula lectus mattis odio, sed euismod risus turpis nec augue. Nam dapibus id felis efficitur auctor. Integer volutpat laoreet arcu, et pharetra nisi congue sed. Integer vestibulum, dolor eu hendrerit commodo, dui ex dictum orci, a facilisis nisl ipsum bibendum orci. Nullam eget imperdiet odio. Nam placerat magna vehicula consectetur faucibus. Vivamus vitae accumsan augue. Duis non sapien tincidunt, convallis massa at, condimentum mi. Etiam suscipit tincidunt risus at tempus. Morbi non purus accumsan, interdum lacus in, imperdiet nunc. </br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat nulla id ornare ultricies. Phasellus rutrum ex vel molestie dictum. Nunc sagittis, ante vel blandit venenatis, ligula lectus mattis odio, sed euismod risus turpis nec augue. Nam dapibus id felis efficitur auctor. Integer volutpat laoreet arcu, et pharetra nisi congue sed. Integer vestibulum, dolor eu hendrerit commodo, dui ex dictum orci, a facilisis nisl ipsum bibendum orci. Nullam eget imperdiet odio. <br> Nam placerat magna vehicula consectetur faucibus. Vivamus vitae accumsan augue. Duis non sapien tincidunt, convallis massa at, condimentum mi. Etiam suscipit tincidunt risus at tempus. Morbi non purus accumsan, interdum lacus in, imperdiet nunc. <br>
                  Aliquam luctus lorem diam, quis sollicitudin eros mattis nec. Nulla viverra lorem hendrerit dui malesuada, sit amet bibendum eros commodo. Duis pulvinar dolor sed elit fermentum, non blandit tortor imperdiet. Aenean mattis pretium ipsum eget venenatis. Aliquam tempus massa leo. Morbi sollicitudin fermentum interdum. Integer efficitur, mauris vel tempus blandit, risus dui ullamcorper ante, vitae malesuada ante felis eget erat. Vestibulum eu ex quis metus egestas efficitur.
             </p>
-            <button>Learn More</button>
         </div>
     </section>
 </main>

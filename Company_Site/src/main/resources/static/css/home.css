@@ -1,11 +1,168 @@
 body{
-    margin: 10px;
+    color: black;
 }
 
+/*HOME PAGE*/
 .img_slide {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 .show {
     display: block;
 }
+
+.home_section1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image_slider{
+    image-rendering: smooth;
+    grid-column: span 3;
+    position: relative;
+}
+
+.image_slider button{
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+    background-color: rgba(180,180, 180, 0.2);
+    padding: 15px ;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.section1_content{
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1_content p {
+    margin: 15px;
+    font-size: 25px;
+}
+
+.buttons {
+    font-size: 15px;
+    width: 140px;
+    height: 50px;
+    border-width: 1px;
+    color: white;
+    border-color: rgba(226,226,226, 1);
+    border-radius: 3px;
+    background-color: black;
+    box-shadow: 8px 5px 2px 2px rgba(0, 0, 255, .2);
+}
+
+.home_section2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*height: 100vh;*/
+}
+
+
+.profile_container{
+    position: relative;
+    grid-column: span 1;
+}
+
+#profile_img {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+#profile_bck{
+    width: 100%;
+    height: 100%;
+}
+
+#about{
+    grid-column: span 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#about p {
+    margin: 20px;
+    line-height: 2.5;
+    font-size: 18px;
+}
+
+/*NAVBAR*/
+
+header{
+    border-bottom: 1px solid grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.nav_item a:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*FOOTER*/
+#footer{
+    margin-top: 5%;
+    background-color: rgba(244, 242, 247, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+
+
+.footer_section1{
+    grid-column: span 1;
+    margin-right: 40px;
+}
+
+.footer_section2{
+    grid-column: span 1;
+    margin-left: 40px;
+}
+
+td {
+    width: 50%;
+    padding: 5px;
+}
+ table{
+     border: grey 1px solid;
+ }
+
+
