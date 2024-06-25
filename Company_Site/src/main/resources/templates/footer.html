@@ -4,17 +4,59 @@
     <meta charset="UTF-8">
     <title>Company Site</title>
 </head>
+<style>
+    #footer{
+        margin-top: 5%;
+        background-color: rgba(244, 242, 247, 0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+
+
+    .footer_section1{
+        grid-column: span 1;
+        margin-right: 40px;
+    }
+
+    .footer_section2{
+        grid-column: span 1;
+        margin-left: 40px;
+    }
+
+    td {
+        padding: 5px;
+        color: cadetblue;
+    }
+
+    table{
+        border: grey 1px solid;
+        padding: 10px;
+    }
+
+</style>
 <body>
     <footer id="footer">
-        <h2>Business Name</h2>
+        <h3>Company Name</h3>
         <div class="footer_container">
             <section class="footer_section1">
-                <table>
-                    <tr>Location</tr>
-                    <tr><td>New York</td></tr>
-                    <tr><td>Manhattan, 10010</td></tr>
-                    <tr><td>123-456-7899</td></tr>
+                <table id="footer_table">
+                    <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>City</th>
+                            <th>Business Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
                 </table>
+
             </section>
 
             <section class="footer_section2">

@@ -23,6 +23,22 @@ function loadFooter(){
         .then(response => response.text())
         //insert the fetched HTML into the placeholder div
         .then(data =>{
-            footer.innerHTML = data;
+            // footer.innerHTML = data;
+            document.getElementById('footer1').innerHTML = data;
+
+            // data to be inserted to the table
+            const tableData = [
+                {state: 'New York', city:'Manhattan', hours:'Monday-Friday'},
+                {state: 'California', city:'San Francisco', hours:'Monday-Friday'},
+                {state: 'Washington', city:'Seattle', hours:'Monday-Friday'},
+            ];
+
+            const tbody = document.querySelector('#footer_table tbody');
+            //iterate through the rows and insert data
+            tableData.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${row.state}</td><td>${row.city}</td><td>${row.hours}</td>`;
+                tbody.appendChild(tr);
+            });
         })}
 

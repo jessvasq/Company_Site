@@ -5,74 +5,81 @@
     <title>Company Site</title>
   <link rel="stylesheet" href="/static/css/home.css">
 </head>
+
 <body>
   <div id="navbar"></div>
 
-  <main>
-    <section>
-      <h1>Section 1</h1>
-      <div>
+  <main id="product_page">
+    <section id="section1_product">
+      <div class="container_1">
         <img src="/static/images/sba_img11.jpeg" alt="product_img">
-        <h3>Product Description 1</h3>
-        <p>Morbi blandit neque eget ligula aliquet, eget sagittis ex faucibus. Quisque sit amet tincidunt metus, non ultricies nunc. </p>
-      </div>
+        <h3 class="desc">Product Description 1</h3>
+          <div class="image_dsc">
+          <p class="desc">Morbi blandit neque eget ligula aliquet, eget sagittis ex faucibus. Quisque sit amet tincidunt metus, non ultricies nunc. </p>
+          </div>
+        </div>
 
-      <div>
+      <div class="container_1">
       <img src="/static/images/sba_img12.jpeg" alt="product_img">
-        <h3>Product Description 2</h3>
+        <h3 class="desc">Product Description 2</h3>
+          <div class="image_dsc">
+              <p class="desc">Morbi blandit neque eget ligula aliquet, eget sagittis ex faucibus. Quisque sit amet tincidunt metus, non ultricies nunc. </p>
+          </div>
       </div>
     </section>
 
-    <section>
-      <h1>Section 2</h1>
-      <p>Use this space to promote the business and its services</p>
-      <button>Explore</button>
+    <section id="section2_product">
+      <p>Use this space to promote the business and its services.Integer tristique bibendum mauris, et eleifend purus elementum nec. Nunc rhoncus nisl eu erat lacinia mattis. Suspendisse sodales placerat aliquam. Mauris auctor nisl sapien, et porttitor nisl varius a. Fusce pellentesque justo ut quam molestie, eget accumsan ante ullamcorper. Aliquam et erat a nibh convallis aliquet.</p>
 
-      <div>
+      <div id="product_form">
         <h3>Get a Quota</h3>
-        <form action="" method="">
-          <label for="name"> Name: </label>
-          <input type="text" id="name" name="name" required placeholder="First Last Name"> <br>
-
-          <label for="email"> Email: </label>
-          <input type="email" id="email" name="email" required placeholder="user@email.com"> <br>
-
-          <label for="message"> Message: </label>
-          <input type="text" id="message" name="message" required placeholder="Type your Inquiry"> <br>
-
           <form>
-            <label for="products_menu">Select service:</label>
-            <select id="products_menu" name="products">
-              <option>Web Development</option>
-              <option>3D Design</option>
-              <option>CAD</option>
-            </select>
+              <label style="font-size: 14px; margin-left: 20px;" for="products_menu">Product:</label>
+              <select id="products_menu" name="products">
+                  <option class="drop_down">Ceramics</option>
+                  <option class="drop_down">Plates</option>
+                  <option class="drop_down">Vases</option>
+              </select>
           </form>
 
-          <input type="submit" value="submit" required> <br>
+        <form action="products.html" method="POST" name="contactForm" id="formContact" class="section2_product_form" onsubmit="return(validateData())">
+          <label for="name"> Name </label>
+          <input type="text" id="name" name="name" placeholder="First Last Name"> <br>
+
+          <label for="email"> Email </label>
+          <input type="email" id="email" name="email" placeholder="user@email.com"> <br>
+
+          <label for="message"> Message </label>
+          <input type="text" id="message" name="message"  placeholder="Type your Inquiry"> <br>
+          <input type="submit" id="submit_form_p" value="submit">
         </form>
       </div>
 
     </section>
 
-    <section>
-      <h1>Section 3</h1>
-      <div>
-        <img src="/static/images/sba_img13.jpeg" alt="product_img">
-        <h3>Product Description 3</h3>
-
+    <section id="section3_product">
+      <div class="container_1">
+<!--        <img src="/static/images/sba_img14.jpeg" alt="product_img">-->
+        <video width='400' height='auto' autoplay muted>
+          <source src="/static/images/9363590-hd_1080_1920_25fps.mp4" type="video/mp4">
+        </video>
+        <h3 class="desc">Product Description 3</h3>
       </div>
 
-     <div>
-      <img src="/static/images/sba_img14.jpeg" alt="product_img">
-       <h3>Product Description 4</h3>
-       <p>Morbi blandit neque eget ligula aliquet, eget sagittis ex faucibus. Quisque sit amet tincidunt metus, non ultricies nunc. </p>
-     </div>
+     <div class="container_1">
+      <img src="/static/images/sba_img13.jpeg" alt="product_img">
+       <h3 class="desc">Product Description 4</h3>
+       <div class="image_dsc">
+          <p class="desc">Morbi blandit neque eget ligula aliquet, eget sagittis ex faucibus. Quisque sit amet tincidunt metus, non ultricies nunc. </p>
+       </div>
+       </div>
     </section>
   </main>
 
   <div id="footer1"></div>
 
   <script src="/static/js/loadNav.js"></script>
+  <!-- Second script-->
+  <script src="/static/js/validate.js"></script>
 </body>
 </html>
