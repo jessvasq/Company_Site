@@ -19,3 +19,4 @@ https://github.com/jessvasq/Company_Site
 
 ![Screenshot 2024-06-29 233413](https://github.com/jessvasq/Company_Site/assets/119137671/1c5f5429-70a4-4d86-bae1-2dbf3a4f46d8)
 ![Screenshot 2024-06-29 233449](https://github.com/jessvasq/Company_Site/assets/119137671/4098ee3a-7cad-48a4-98f3-23ee9d5ab0f4)
+![Screenshot 2024-06-29 233434](https://github.com/jessvasq/Company_Site/assets/119137671/4271d00c-c61c-4f75-8ae0-26ec0be1bc89)
